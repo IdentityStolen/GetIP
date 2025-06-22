@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello User - Show IP</title>
+</head>
+<body>
+    <h1>Hello Django User</h1>
+    {% if name %}
+        <p>Hello, <strong>{{ name }}</strong>!</p>
+        <p>Your IPv4 address: {{ ipv4|default:'Not detected' }}</p>
+        <p>Your IPv6 address: {{ ipv6|default:'Not detected' }}</p>
+        <a href="">Try another name</a>
+    {% else %}
+        <form method="post">
+            {% csrf_token %}
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" name="name" required>
+            <button type="submit">Submit</button>
+        </form>
+    {% endif %}
+</body>
+</html>
+
