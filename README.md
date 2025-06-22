@@ -1,6 +1,6 @@
 # GetIP
 
-This repository is created using copilot agent via prompt engineering.
+This repository is created using copilot agent via prompt engineering using GPT-4.1 model.
 GetIP is a simple Django web application that displays the user's IP address (either IPv4 or IPv6) after they enter their name. It demonstrates basic Django form handling, template rendering, and how to extract the client IP address from a request.
 
 ## Features
